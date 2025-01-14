@@ -1,5 +1,7 @@
 ﻿using GeoLocationAPI.Data;
 using GeoLocationAPI.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +16,7 @@ public class RoutesController : ControllerBase
         _context = context;
     }
 
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "Admin")]
     [HttpPost]
     public IActionResult CreateRoute([FromBody] RouteDto routeDto)
     {
@@ -48,6 +51,7 @@ public class RoutesController : ControllerBase
         });
     }
 
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "Admin")]
     [HttpGet("{id}")]
     public IActionResult GetByRouteId(int id)
     {
@@ -74,6 +78,7 @@ public class RoutesController : ControllerBase
         return Ok(routeDto);
     }
 
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "Admin")]
     [HttpGet("user/{userId}")]
     public async Task<IActionResult> GetRoutesByUserId(string userId)
     {
@@ -81,6 +86,7 @@ public class RoutesController : ControllerBase
         return Ok(routes);
     }
 
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "Admin")]
     [HttpGet]
     public IActionResult GetAllRoutes()
     {
@@ -108,6 +114,7 @@ public class RoutesController : ControllerBase
         return Ok(routeDtos);
     }
 
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "Admin")]
     [HttpDelete("{id}")]
     public IActionResult DeleteRoute(int id)
     {
@@ -119,6 +126,7 @@ public class RoutesController : ControllerBase
         return Ok();
     }
 
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "kierowca")]
     [HttpGet("email/{email}")]
     public async Task<IActionResult> GetRoutesByEmail(string email)
     {
@@ -148,6 +156,7 @@ public class RoutesController : ControllerBase
         return Ok(routeDtos);
     }
 
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "kierowca")]
     [HttpPut("{id}/complete")]
     public IActionResult CompleteRoute(int id)
     {

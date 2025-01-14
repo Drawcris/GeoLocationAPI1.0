@@ -29,6 +29,7 @@ namespace GeoLocationAPI.Controllers
             _configuration = configuration;
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "Admin")]
         [HttpGet("users")]
         public async Task<IActionResult> GetUsers()
         {
@@ -38,6 +39,7 @@ namespace GeoLocationAPI.Controllers
             return Ok(users);
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "Admin")]
         [HttpGet("roles")]
         public async Task<IActionResult> ManageRoles(string userId)
         {
@@ -61,6 +63,7 @@ namespace GeoLocationAPI.Controllers
             return Ok(model);
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "Admin")]
         [HttpPut("users/{userId}/role")]
         public async Task<IActionResult> UpdateUserRoles(string userId, [FromBody] UpdateUserRolesRequest request)
         {
@@ -153,6 +156,7 @@ namespace GeoLocationAPI.Controllers
             return BadRequest(result.Errors);
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "Admin")]
         [HttpDelete]
         public async Task<IActionResult> DeleteUser(string userId)
         {
@@ -171,6 +175,7 @@ namespace GeoLocationAPI.Controllers
 
             return BadRequest(result.Errors);
         }
+
 
         [HttpPut("users/{userId}/password")]
         public async Task<IActionResult> ChangePassword(string userId, [FromBody] ChangePasswordModel model)
@@ -191,6 +196,7 @@ namespace GeoLocationAPI.Controllers
             return BadRequest(result.Errors);
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = "kierowca")]
         [HttpGet("users/email/{email}")]
         public async Task<IActionResult> GetUserByEmail(string email)
         {
