@@ -40,7 +40,7 @@ Intuitive user interface
 
 This application aims to simplify route and user management while providing an interactive and modern user experience.
 
-# Screeny 
+# Screens 
 
 ![image](https://github.com/user-attachments/assets/cc84513a-15af-45f8-b4e4-abc96ca85dcc)
 ![image](https://github.com/user-attachments/assets/2d788cf1-fa4a-4981-b0a3-f679fb81d066)
