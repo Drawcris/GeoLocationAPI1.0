@@ -4,6 +4,9 @@
 
 The goal of this project is to develop and deploy a web application designed for managing users, routes, and visualizing routes on a map. The application provides an easy and intuitive way to manage data, with one of the key features being the presentation of routes on a map for a specific user assigned to a given route.
 
+## Architectural Patterns Used
+three-tier architecture
+
 ## Technologies
 
 # Backend:  
