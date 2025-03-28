@@ -1,42 +1,44 @@
-# Aplikacja do Zarządzania Użytkownikami i Trasami
+# User and Route Management Application
 
-## Opis Projektu
+## Project Description
 
-Celem projektu jest opracowanie i wdrożenie aplikacji webowej przeznaczonej do zarządzania użytkownikami, trasami oraz wizualizacją tras na mapie. Aplikacja umożliwia w prosty i intuicyjny sposób zarządzanie danymi, a jedną z kluczowych funkcji jest prezentacja tras na mapie dla konkretnego użytkownika przypisanego do danej trasy.
+The goal of this project is to develop and deploy a web application designed for managing users, routes, and visualizing routes on a map. The application provides an easy and intuitive way to manage data, with one of the key features being the presentation of routes on a map for a specific user assigned to a given route.
 
-## Technologie
+## Technologies
 
 # Backend:  
 
-ASP.NET - Framework do budowy backendu
+ASP.NET - Framework for backend development
 
-REST API - Architektura komunikacji między klientem a serwerem
+REST API - Communication architecture between client and server
 
-Microsoft SQL Server - Baza danych do przechowywania informacji o użytkownikach i trasach
+Microsoft SQL Server - - Database for storing user and route information
 
-C# - Język programowania do implementacji logiki biznesowej
+C# - Programming language for implementing business logic
 
 # Frontend: https://github.com/Drawcris/GeoLocationFront1.0
 
-React - Biblioteka do budowy interfejsu użytkownika
+React - Library for building user interfaces
 
-Vite - Narzędzie do szybkiego budowania aplikacji frontendowej
+Vite - Tool for fast frontend development
 
-TomTom API - Integracja mapowa do wizualizacji tras
+TomTom API - Map integration for route visualization
 
-Tailwind CSS - Framework CSS do stylizacji interfejsu
+Tailwind CSS - CSS framework for styling the interface
 
-shadcn/ui - Komponenty UI do budowy estetycznego interfejsu
+shadcn/ui - UI components for building an aesthetic interface
 
-# Funkcjonalności
+# Features
 
-Rejestracja i zarządzanie użytkownikami
+User registration and management
 
-Tworzenie, edycja i usuwanie tras
+Creating, editing, and deleting routes
 
-Wizualizacja tras na mapie dla przypisanych użytkowników
+Route visualization on a map for assigned users
 
-Intuicyjny interfejs użytkownika
+Intuitive user interface
+
+This application aims to simplify route and user management while providing an interactive and modern user experience.
 
 # Screeny 
 
