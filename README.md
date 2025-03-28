@@ -8,6 +8,7 @@ The goal of this project is to develop and deploy a web application designed for
 
 # Backend:  
 
+![ASP.NET](https://img.shields.io/badge/ASP.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
 ASP.NET - Framework for backend development
 
 REST API - Communication architecture between client and server
