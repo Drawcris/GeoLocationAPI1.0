@@ -1,8 +1,8 @@
-# 🚶‍♂️ Route Manager - User and Route Management Application
+# 🚶‍♂️ Koala Express - User and Route Management Application
 
 ## Project Description
 
-Route Manager is a web application designed to streamline the process of managing users and their assigned routes. The app allows users to create, edit, and delete routes, as well as visualize them on an interactive map. The goal is to provide a simple and efficient way to handle user-route associations while offering a modern and intuitive interface.
+Koala Express is a web application designed to streamline the process of managing users and their assigned routes. The app allows users to create, edit, and delete routes, as well as visualize them on an interactive map. The goal is to provide a simple and efficient way to handle user-route associations while offering a modern and intuitive interface.
 
 ## 🚀 Tech Stack
 
